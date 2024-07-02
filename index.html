@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FakeStore</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -13,6 +13,7 @@
     <header id="header">
         <a href="#"><img src="/assets/logo.png" alt=""></a>
 
+        <!-- Navbar Filter Items -->
         <div>
             <ul id="filters">
                 <li><a href="">Men</a></li>
@@ -22,10 +23,13 @@
             </ul>
         </div>
 
+        <!-- Search-Box -->
         <div class="search-box">
             <div class="search-bar">
-                <input type="text" class="search-bar1" placeholder="Search for products...">
+                <input type="text" id="search-bar1" placeholder="Search for products...">
             </div>
+
+            <!-- Log In and Cart Btns -->
             <div class="header-btn">
                 <button class="Log-In">Log In</button>
                 <button class="Cart">Cart</button>
@@ -53,6 +57,8 @@
                 </select>
             </div>
         </div>
+
+        <div id="results"></div>
     </main>
 
 

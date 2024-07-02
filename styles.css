@@ -7,19 +7,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.Main-Area{
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+body {
+    margin: 0;
+    padding: 0;
 }
 
 #header {
     display: flex;
     justify-content: space-between;
-    margin: 15px;
     background: #ccc;
 }
 
@@ -57,7 +52,7 @@ a {
     
 }
 
-.search-bar1 {
+#search-bar1 {
     width: 100vh;
     max-width: 550px;
     padding: 5px;
@@ -86,8 +81,17 @@ a {
 }
 
 main {
-    height: 68.6vh;
+    min-height: 100vh;
     margin: 20px;
+}
+
+.Main-Area {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .Sort {
@@ -95,7 +99,6 @@ main {
     justify-content: space-between;
     align-items: center;
     margin: 10px;
-
 }
 
 footer{
@@ -105,10 +108,7 @@ footer{
     align-items: center;
     background-color: #ccc;
     color: #fff;
-    height: 100px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 0;
+    height: 80px;
 }
 
 .bottom-left {
@@ -117,6 +117,10 @@ footer{
     align-items: center;
     margin: 10px;
     justify-content: flex-start;
+}
+
+.logo{
+    margin-bottom: 20px;
 }
 
 .bottom-comp-name {
@@ -153,4 +157,35 @@ footer{
 
 .Author {
     margin-right: 690px;
+} 
+
+.item img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.item h3 {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+.item p {
+    font-size: 16px;
+    color: #777;
+    text-align: center;
+}
+
+.item {
+    flex-basis: calc(25% - 20px);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
 }
