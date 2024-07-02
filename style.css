@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Main-Area{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    background: #ccc;
+}
+
+img {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px;
+    margin: 10px;
+}
+
+ul li {
+    margin-right: auto;
+    margin-left: auto;
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.search-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vh;
+    
+}
+
+.search-bar1 {
+    width: 100vh;
+    max-width: 550px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.header-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    padding: 10px;
+}
+
+.Log-In,.Cart{
+    display: flex;
+    flex-direction: row;
+    background-color: #0F172A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+main {
+    height: 100vh;
+    margin: 20px;
+}
+
+.Sort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    color: #fff;
+    height: 100px;
+    margin: 15px;
+}
+
+.bottom-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+
+}
+
+.bottom-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+    justify-content: flex-start;
+}
+
+.bottom-comp-name {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    color: #0F172A;
+    font-size:10;
+    font-weight: 500;
+}
+
+.social-links {
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.social-links a:hover {
+    color: #ff4321;
+}
+
+.Vert-Line {
+    border-left: 2px solid #0F172A;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.Author-Link a:hover{
+    color: #ff4321;
+}
+
+.Author-Link {
+    font-size: 15px;
+    color:#fff;
+}
