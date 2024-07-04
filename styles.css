@@ -15,28 +15,28 @@ body {
 #header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: #ccc;
 }
 
 img {
     margin: 10px;
-    margin-top: 16px;
     display: flex;
     justify-content: center;
 }
 
 ul {
+    padding: 0 4rem;
+    width: 100%;
     list-style: none;
     display: flex;
     flex-direction: row;
-    row-gap: 10px;
-    margin: 10px;
 }
 
 ul li {
+    /* width:100%; */
     margin-right: auto;
     margin-left: auto;
-    margin: 15px;
 }
 
 a {
@@ -48,7 +48,7 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100vh;
+    width: 100%;
 
 }
 
@@ -56,22 +56,23 @@ a {
     width: 100vh;
     max-width: 550px;
     padding: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #0F172A;
     border-radius: 5px;
     font-size: 16px;
 }
 
 .header-btn {
+    margin-right: 10px;
     display: flex;
     flex-direction: row;
-    gap: 4px;
+    gap: 8px;
     padding: 10px;
 }
 
 .Log-In,
 .Cart {
-    display: flex;
-    flex-direction: row;
+    width: 5rem;
+    text-align: center;
     background-color: #0F172A;
     color: #fff;
     border: none;
@@ -111,8 +112,9 @@ footer {
     justify-content: flex-start;
 }
 
-.logo {
-    margin-bottom: 20px;
+.bottom-logo {
+    display: flex;
+    align-items: center;
 }
 
 .bottom-comp-name {
@@ -151,17 +153,6 @@ footer {
     margin-right: 690px;
 }
 
-.item img {
-    width: 270px;
-    height: 192px;
-    margin-bottom: 15px;
-}
-
-.item p {
-    font-size: 16px;
-    color: #777;
-}
-
 .item {
     flex-basis: calc(25% - 20px);
     background-color: #fff;
@@ -173,6 +164,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: left;
+    height: 540px;
+    border: 1px solid;
 }
 
 #results {
@@ -186,19 +179,19 @@ footer {
     /* Added this line to make grid items equal height */
 }
 
-#results p {
-    text-align: left;
-    font-size: 14px;
-}
-
 #results img {
     max-width: 200px;
     max-height: 200px;
     margin-bottom: 15px;
+    display: block;
 }
 
 .category {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     color:blue !important;
+    align-items: left !important;
 }
 
 .title {
@@ -206,4 +199,37 @@ footer {
     color: #333;
     text-align: left;
     font-weight: 500;
+    width: 100%;
+}
+
+.title-text {
+    display: block;
+}
+
+.prod-image {
+    height: 270px;
+    display: grid;
+    place-items: center;
+}
+
+.prod-image img {
+
+}
+
+.rating {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.price {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    font-size: 30px;
+    font-weight: 700;
 }
